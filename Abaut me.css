@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+ box-sizing: border-box ;
+ scroll-padding-top: 2rem;
+ text-decoration: none;
+ list-style: none;
+ scroll-behavior: smooth;
+}
+:root{ 
+    --main-color:#0d0d0d;
+    --second-color:rgb(14, 14, 14);
+}
+
+section{
+    padding: 50px 10%;
+}
+*::selection{
+    color: #fffbfb;
+    background: var(--main-color);
+}
+img{
+    width: 100%;
+}
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(235, 206, 240);
+    box-shadow: 0 4px 41px rgba(14, 14, 14, 0.14);
+    padding: 15px 10%;
+    transition: 0.2s;
+  }
+.logo{
+    display: flex;
+    align-items: center ;
+}
+.logo img{
+    width: 90px;
+}
+.navbar{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.navbar a {
+    font-size: 1rem;
+    padding: 11px 15px;
+    color: var(--second-color);
+    font-weight:600;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color: rgb(7, 7, 241);
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    background: linear-gradient(to right, #ad6ec4 0%, #e4a5b3 100%);
+    gap:1rem;
+}
+.home-text {
+    flex: 1 1 17rem;
+}
+.apa {
+    flex: 1 1 17rem;
+}
+.apa img {
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-11px,0);
+    }
+    50%{
+        transform: translate(0,-11px);
+    }
+    100%{
+        transform: translate(-11px,0);
+    }
+}
+
+.ini {
+    margin: px auto;
+    }
+     
+   .ini img{
+    border-radius: 100%;
+    border: 10px solid rgb(128, 123, 123)44) 57, 57);
+    height: 400px;
+    width: 300px;
+    animation: animate 3s linear infinite;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    color: #000000;
+    }
+
+.home-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.home-text h1{
+    font-size: 3.2rem;
+    font-weight: bolder;
+}
+.home-text h2 {
+    font-size: 1.8 rem;
+    font-weight: 600;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin: 0.5rem 0

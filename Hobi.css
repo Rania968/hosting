@@ -1,0 +1,146 @@
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+ box-sizing: border-box ;
+ scroll-padding-top: 2rem;
+ text-decoration: none;
+ list-style: none;
+ scroll-behavior: smooth;
+}
+
+:root{ 
+    --main-color:#d42c20;
+    --second-color:#121312;
+}
+body {
+  background: linear-gradient(to right, rgb(174, 100, 100)0%, #e7bfc9 100%);
+  font-size: 12px;
+}
+section{
+    padding: 50px 10%;
+}
+*::selection{
+    color: rgb(157, 15, 15)787;
+    background: var(--main-color);
+}
+img{
+    width: 90%;
+}
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #faa4a4;
+    box-shadow: 0 4px 41px rgba(53, 130, 130, 0.14);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center ;
+}
+.logo img{
+    width: 90px;
+}
+.navbar{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.navbar a {
+    font-size: 1rem;
+    padding: 11px 15px;
+    color: var(--second-color);
+    font-weight:600;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color: rgb(9, 9, 240);
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .column .card img{
+    border-radius: 30px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    color: rgb(253, 252, 252);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color:white;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #4c1c1c;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #595454;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
